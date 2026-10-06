@@ -80,6 +80,16 @@
         backdrop-filter: blur(8px);
         border-bottom: 1px solid var(--line);
       }
+      nav .brand {
+        margin-right:auto;
+        display:flex;
+        align-items:center
+      }
+      nav .brand img {
+        display:block;
+        height:34px;
+        width:auto
+      }
       nav .wrap {
         display: flex;
         gap: 22px;
@@ -557,7 +567,8 @@
   <body>
     <nav>
       <div class="wrap">
-        <b>Ketan.</b><a href="#about">About</a
+        <a class="brand" href="#" aria-label="Ketan, back to top"><img src="logo.png" alt="Ketan"></a>
+        <a href="#about">About</a
         ><a href="#skills">Skills</a><a href="#projects">Projects</a
         ><a href="#experience">Experience</a><a href="#certs">Certifications</a
         ><a href="#contact">Contact</a>
