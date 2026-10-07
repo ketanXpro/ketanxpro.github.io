@@ -1270,6 +1270,69 @@
           grid-template-columns: 1fr;
         }
       }
+      .ab-s {
+        padding: 96px 0 8px;
+      }
+      .ab {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        gap: 90px;
+        align-items: start;
+      }
+      .ab-text p {
+        max-width: 660px;
+        margin: 0 0 26px;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.8;
+      }
+      .ab-text .ab-lead {
+        margin-bottom: 30px;
+        color: var(--text);
+        font-size: clamp(20px, 2.3vw, 26px);
+        line-height: 1.5;
+      }
+      .ab-stats {
+        display: grid;
+        gap: 22px;
+      }
+      .ab-stat {
+        padding: 2px 0 6px 22px;
+        border-left: 1px solid var(--line);
+      }
+      .ab-stat span {
+        display: block;
+        margin-bottom: 14px;
+        font: 11px var(--mono);
+        color: var(--muted);
+      }
+      .ab-stat b {
+        display: block;
+        font-size: clamp(30px, 3.6vw, 46px);
+        line-height: 1.05;
+        letter-spacing: -0.035em;
+        font-weight: 600;
+      }
+      .ab-stat b small {
+        margin-left: 2px;
+        font-size: 0.38em;
+        color: var(--accent);
+        letter-spacing: 0;
+      }
+      .ab-stat em {
+        display: block;
+        margin-top: 10px;
+        font-style: normal;
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+      @media (max-width: 860px) {
+        .ab {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1348,34 +1411,49 @@
         </div>
       </section>
 
-      <section id="about" class="about">
-        <h2>About</h2>
-        <p>
-          I'm a B.Tech Information Technology student focused on Blue Team
-          security, threat detection, incident investigation and digital
-          forensics. I've gained hands-on experience through a cybersecurity
-          internship, security monitoring projects and practical labs.
-        </p>
-        <p>
-          I enjoy turning raw security telemetry into a clear story: identifying
-          suspicious activity, investigating what happened, building detection
-          logic and documenting evidence clearly.
-        </p>
-        <p>
-          My current focus is growing deeper in threat hunting, DFIR, Windows
-          security, network traffic analysis, detection engineering and incident
-          response.
-        </p>
-        <div class="facts">
-          <div class="fact">
-            <b>8.54 / 10</b><span>CGPA, B.Tech IT (2023 to 2027)</span>
+      <section id="about" class="ab-s">
+        <div class="sh">
+          <div>
+            <span class="eyebrow">PROFILE</span>
+            <h2>About<span class="dot">.</span></h2>
           </div>
-          <div class="fact">
-            <b>Blue Team</b><span>Detection · Hunting · DFIR</span>
+          <p>
+            Security-focused. Investigation-driven. Always learning from the
+            evidence.
+          </p>
+        </div>
+        <div class="ab">
+          <div class="ab-text">
+            <p class="ab-lead">
+              I'm a B.Tech Information Technology student focused on Blue Team
+              security, threat detection, incident investigation and digital
+              forensics.
+            </p>
+            <p>
+              I've gained hands-on experience through a cybersecurity
+              internship, security monitoring projects and practical labs. I
+              enjoy turning raw security telemetry into a clear story:
+              identifying suspicious activity, investigating what happened,
+              building detection logic and documenting evidence clearly.
+            </p>
+            <p>
+              My current focus is growing deeper in threat hunting, DFIR,
+              Windows security, network traffic analysis, detection engineering
+              and incident response.
+            </p>
           </div>
-          <div class="fact">
-            <b>Security Monitoring</b
-            ><span>SOC · SIEM · Incident Investigation</span>
+          <div class="ab-stats">
+            <div class="ab-stat">
+              <span>01</span><b>8.54<small>/10</small></b
+              ><em>CGPA · B.Tech IT<br />2023 — 2027</em>
+            </div>
+            <div class="ab-stat">
+              <span>02</span><b>Blue Team</b><em>Detection · Hunting · DFIR</em>
+            </div>
+            <div class="ab-stat">
+              <span>03</span><b>Security Monitoring</b
+              ><em>SOC · SIEM · Incident Investigation</em>
+            </div>
           </div>
         </div>
       </section>
